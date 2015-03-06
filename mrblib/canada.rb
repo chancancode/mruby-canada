@@ -25,3 +25,12 @@ module Kernel
     obj.inspect
   end
 end
+
+class Exception
+  def to_s_with_apologies
+    "I'm sorry, but #{to_s_without_apologies}"
+  end
+
+  alias_method :to_s_without_apologies, :to_s
+  alias_method :to_s, :to_s_with_apologies
+end
