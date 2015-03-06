@@ -5,18 +5,19 @@
 It's well known that we have [different conventions](http://programmers.stackexchange.com/questions/1483/do-people-in-non-english-speaking-countries-code-in-english#answer-5576) for programming in Canada. This MRuby gem attempts to make life easier for Canadian MRubyists by integrating these conventions into the Ruby language:
 
 ```ruby
->> [].empty_eh?
-=> true
->> [1,2,3].empty_eh?
-=> false
->> [].respond_to_eh?(:empty_eh?)
-=> true
->> aboot Object.new
-=> "#<Object:0x007f802b8b92c0>"
->> raise "something went wrong..."
-RuntimeError: I'm sorry, but something went wrong...
-  from (irb):6
-  from /Users/godfrey/.rvm/rubies/ruby-2.0.0-p195/bin/irb:16:in `<main>'
+% ./mruby/build/host/bin/mirb
+mirb - Embeddable Interactive Ruby Shell
+
+> [].empty_eh?
+ => true
+> [1,2,3].empty_eh?
+ => false
+> [].respond_to_eh?(:empty_eh?)
+ => true
+> aboot Object.new
+ => "#<Object:0x7f954b808720>"
+> raise "something went wrong..."
+(mirb):5: I'm sorry, but something went wrong... (RuntimeError)
 ```
 
 Cool, eh?

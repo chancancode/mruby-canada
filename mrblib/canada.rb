@@ -27,10 +27,11 @@ module Kernel
 end
 
 class Exception
-  def to_s_with_apologies
-    "I'm sorry, but #{to_s_without_apologies}"
+  def initialize_with_apologies(*args)
+    args[0] = "I'm sorry, but " + args[0]
+    initialize_without_apologies(*args)
   end
 
-  alias_method :to_s_without_apologies, :to_s
-  alias_method :to_s, :to_s_with_apologies
+  alias_method :initialize_without_apologies, :initialize
+  alias_method :initialize, :initialize_with_apologies
 end
