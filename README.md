@@ -1,8 +1,8 @@
-# Canada for MRuby
+# Canada for mruby
 
 ![Canadian flag](https://raw.github.com/vanruby/canada/master/canada.png)
 
-It's well known that we have [different conventions](http://programmers.stackexchange.com/questions/1483/do-people-in-non-english-speaking-countries-code-in-english#answer-5576) for programming in Canada. This MRuby gem attempts to make life easier for Canadian MRubyists by integrating these conventions into the Ruby language:
+It's well known that we have [different conventions](http://programmers.stackexchange.com/questions/1483/do-people-in-non-english-speaking-countries-code-in-english#answer-5576) for programming in Canada. This mruby gem attempts to make life easier for Canadian mrubyists by integrating these conventions into the mruby language:
 
 ```ruby
 % ./mruby/build/host/bin/mirb
@@ -22,7 +22,7 @@ mirb - Embeddable Interactive Ruby Shell
 
 Cool, eh?
 
-## What about performance?
+## What aboot performance?
 
 We hand-tuned the gem's performance to keep it in line with everything else in Canada.
 
