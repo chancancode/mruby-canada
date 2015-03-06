@@ -24,3 +24,18 @@ assert('respond_to?') do
   yes.each { |y| assert_true([].respond_to?(y)) }
   no.each { |n| assert_false([].respond_to?(n)) }
 end
+
+assert('aboot') do
+  cases = [
+    [],
+    [1,2,3],
+    {},
+    {a: 1, b: 2},
+    Object.new,
+    true,
+    false,
+    nil
+  ]
+
+  cases.each { |c| assert_equal c.inspect, aboot(c) }
+end

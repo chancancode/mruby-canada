@@ -19,3 +19,9 @@ class Object
     end
   end
 end
+
+module Kernel
+  def aboot(obj)
+    obj.inspect
+  end
+end
