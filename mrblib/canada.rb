@@ -24,6 +24,10 @@ module Kernel
   def aboot(obj)
     obj.inspect
   end
+
+  def main
+    puts "ZOMG @hone02!"
+  end
 end
 
 class Exception
