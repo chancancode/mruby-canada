@@ -28,7 +28,7 @@ end
 
 class Exception
   def initialize_with_apologies(*args)
-    args[0] = "I'm sorry, but " + args[0]
+    args[0] = "LOL, " + args[0]
     initialize_without_apologies(*args)
   end
 
