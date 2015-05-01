@@ -1,3 +1,7 @@
+assert('zomg lol') do
+  assert_false true
+end
+
 assert('dispatch eh? method to existing ? method') do
   assert_true [].empty_eh?
   assert_false [1,2,3].empty_eh?
